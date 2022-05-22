@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PreemptiveBookCafe</string>
+    <string name="app_id_text_box">학번을 입력하세요</string>
+    <string name="app_id_lost_text">학번 등록이 되어있지 않나요?</string>
+    <string name="app_id_deskChoice_text">좌석을 선택하세요.</string>
+    <string name="app_id_deskSuccess_text">좌석 선택을 완료했습니다.</string>
+    <string name="app_id_deskSubSuccess_text">좌석번호 : </string>
+    <string name="app_id_deskSubSuccess2_text">5초후 홈 화면으로 돌아갑니다. </string>
+    <string name="app_id_deskFail_text">좌석 선택을 실패했습니다.</string>
+    <string name="app_id_deskSubFail_text">잠시 후 다시 시도해주세요.</string>
+    <string name="app_id_deskFaiLBtn_text">좌석 선택 화면으로 돌아가기</string>
+    <string name="app_id_deskChange_text">변경하려는 좌석을 선택하세요.</string>
+    <string name="app_id_deskChangeSuccess_text">좌석 변경을 완료했습니다.</string>
+    <string name="app_id_deskChangeFail_text">좌석 변경을 실패했습니다.</string>
+    <string name="app_id_deskChangeFaiLBtn_text">좌석 변경 화면으로 돌아가기</string>
+    <string name="app_id_deskCancle_text">좌석을 취소하시겠습니까?</string>
+    <string name="app_id_deskCancleSucces_text">좌석을 취소했습니다.</string>
+    <string name="app_id_deskCancleFail_text">좌석 취소를 실패했습니다.</string>
+    <string name="app_id_deskCancleFailBtn_text">홈 화면으로 돌아가기</string>
+    <string name="app_id_deskLoginFail_text">로그인을 실패했습니다.</string>
+</resources>

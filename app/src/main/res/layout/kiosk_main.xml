@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/topTopBack"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/topbox1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/topBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/backspace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/topHome"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toEndOf="@+id/topBack"
+        app:layout_constraintTop_toTopOf="@+id/topBack" />
+
+    <TextView
+        android:id="@+id/topNum"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/idbox"
+        android:paddingTop="5dp"
+        android:text="201701742"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBack" />
+
+    <ImageView
+        android:id="@+id/topLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/topboxline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topTopBack" />
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="136dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logotype1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainNumTextBox"
+        android:layout_width="276dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/idtextbox"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/app_id_text_box"
+        android:textColorHint="@color/hint"
+        android:paddingTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLogo" />
+
+    <ImageView
+        android:id="@+id/num1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/group126"
+        app:layout_constraintEnd_toStartOf="@+id/num2"
+        app:layout_constraintTop_toTopOf="@+id/num2" />
+
+    <ImageView
+        android:id="@+id/num2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/group127"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainNumTextBox" />
+
+    <ImageView
+        android:id="@+id/num3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/group128"
+        app:layout_constraintStart_toEndOf="@+id/num2"
+        app:layout_constraintTop_toTopOf="@+id/num2" />
+
+    <ImageView
+        android:id="@+id/num4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/group129"
+        app:layout_constraintStart_toStartOf="@+id/num1"
+        app:layout_constraintTop_toTopOf="@+id/num5" />
+
+    <ImageView
+        android:id="@+id/num5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/group130"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <ImageView
+        android:id="@+id/num6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/group131"
+        app:layout_constraintEnd_toEndOf="@+id/num3"
+        app:layout_constraintTop_toTopOf="@+id/num5" />
+
+    <ImageView
+        android:id="@+id/num9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/group132"
+        app:layout_constraintEnd_toEndOf="@+id/num6"
+        app:layout_constraintTop_toTopOf="@+id/num8" />
+
+    <ImageView
+        android:id="@+id/num7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/group133"
+        app:layout_constraintStart_toStartOf="@+id/num4"
+        app:layout_constraintTop_toTopOf="@+id/num8" />
+
+    <ImageView
+        android:id="@+id/num8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/group134"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num5" />
+
+    <ImageView
+        android:id="@+id/mainDelBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/group135"
+        app:layout_constraintEnd_toEndOf="@+id/num9"
+        app:layout_constraintTop_toTopOf="@+id/num0" />
+
+    <ImageView
+        android:id="@+id/mainCheckBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/group137"
+        app:layout_constraintStart_toStartOf="@+id/num7"
+        app:layout_constraintTop_toTopOf="@+id/num0" />
+
+    <ImageView
+        android:id="@+id/num0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/group138"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num8" />
+
+    <ImageView
+        android:id="@+id/mainEntBtn"
+        android:layout_width="224dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/entrancebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num0" />
+
+    <TextView
+        android:id="@+id/joinLink"
+        android:layout_width="166dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/no_idbutton"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="6dp"
+        android:text="@string/app_id_lost_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainEntBtn" />
+
+
+</android.support.constraint.ConstraintLayout>
