@@ -8,18 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskMenuSelect" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskChoice" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskChange" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskCancel" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskChoiceSuccess" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskChoiceFail" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskChangeSuccess" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskChangeFail" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskCancelSuccess" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskDeskCancelFail" />
-        <activity android:name="com.bookcafe.android.preemptivebookcafe.KioskLoginFail" />
+        <activity android:name=".KioskMenuSelect" />
+        <activity android:name=".KioskDeskChoice" />
+        <activity android:name=".KioskDeskChange" />
+        <activity android:name=".KioskDeskCancel" />
+        <activity android:name=".KioskDeskChoiceSuccess" />
+        <activity android:name=".KioskDeskChoiceFail" />
+        <activity android:name=".KioskDeskChangeSuccess" />
+        <activity android:name=".KioskDeskChangeFail" />
+        <activity android:name=".KioskDeskCancelSuccess" />
+        <activity android:name=".KioskDeskCancelFail" />
+        <activity android:name=".KioskLoginFail" />
 
         <activity
             android:name=".KioskMain"

@@ -1,16 +1,14 @@
 package com.bookcafe.android.preemptivebookcafe
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.app.AlertDialog
 import android.view.LayoutInflater
 import com.bookcafe.android.preemptivebookcafe.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.kiosk_desk_change.*
 
 class KioskDeskChange : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

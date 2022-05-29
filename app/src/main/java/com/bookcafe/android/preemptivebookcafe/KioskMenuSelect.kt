@@ -2,7 +2,7 @@ package com.bookcafe.android.preemptivebookcafe
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import kotlinx.android.synthetic.main.kiosk_menu_select.*
 
@@ -11,23 +11,27 @@ class KioskMenuSelect : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.kiosk_menu_select)
 
-        val stuNum = intent.getStringExtra("stuNum")
-        Log.e("KioskMain", "받아온 학번 : $stuNum");
+        var intentData = intent
+        var stuNum = intentData.getStringExtra("classNo")
+        topNum.setText(stuNum.toString())
 
         deskChoiceBtn.setOnClickListener {
             var intent = Intent(this, KioskDeskChoice::class.java)
+            intent.putExtra("classNo",stuNum)
             startActivity(intent)
             finish()
         }
 
         deskChangeBtn.setOnClickListener {
             var intent = Intent(this, KioskDeskChange::class.java)
+            intent.putExtra("classNo",stuNum)
             startActivity(intent)
             finish()
         }
 
         deskCancelBtn.setOnClickListener {
             var intent = Intent(this, KioskDeskCancel::class.java)
+            intent.putExtra("classNo",stuNum)
             startActivity(intent)
             finish()
         }

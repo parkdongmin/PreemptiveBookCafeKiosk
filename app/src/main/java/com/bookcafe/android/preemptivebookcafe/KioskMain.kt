@@ -2,7 +2,7 @@ package com.bookcafe.android.preemptivebookcafe
 
 import android.content.Intent
 import android.net.Uri
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
@@ -190,7 +190,7 @@ class KioskMain : AppCompatActivity() {
 
         mainEntBtn.setOnClickListener {
             var intent = Intent(this, KioskMenuSelect::class.java) //다음 화면 이동을 위한 intent 객체 생성
-            intent.putExtra("stuNum",stuNum)
+            intent.putExtra("classNo",stuNum)
             startActivity(intent)
             finish()
         }

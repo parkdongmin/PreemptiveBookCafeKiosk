@@ -1,9 +1,9 @@
 package com.bookcafe.android.preemptivebookcafe
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
-import android.support.v7.app.AlertDialog
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import android.view.LayoutInflater
 import com.bookcafe.android.preemptivebookcafe.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.kiosk_desk_cancel.*
@@ -13,8 +13,6 @@ import kotlinx.android.synthetic.main.kiosk_desk_cancel.topHome
 import kotlinx.android.synthetic.main.kiosk_desk_choice.*
 
 class KioskDeskCancel : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
