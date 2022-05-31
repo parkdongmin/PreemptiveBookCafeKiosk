@@ -1723,12 +1723,13 @@ class KioskDeskChoice: AppCompatActivity() {
 
         topBack.setOnClickListener {
             var intent = Intent(this, KioskMenuSelect::class.java)
+            intent.putExtra("classNo",stuNum)
             startActivity(intent)
             finish()
         }
 
         topHome.setOnClickListener {
-            var intent = Intent(this, KioskMenuSelect::class.java)
+            var intent = Intent(this, KioskMain::class.java)
             startActivity(intent)
             finish()
         }
@@ -1746,6 +1747,7 @@ class KioskDeskChoice: AppCompatActivity() {
                     override fun onResponse(call: Call<Object>, response: Response<Object>) {
                         if(response.code()==400){
                             Log.d("에러 ", "${response.errorBody()?.string()!!}")
+                            choiceFailLink(stuNum.toString())
                         }
                         else{
                             Log.d("좌석선점" , "${response.raw()}")
@@ -1753,9 +1755,9 @@ class KioskDeskChoice: AppCompatActivity() {
                             choiceSuccessLink(stuNum.toString(), id.toString())
                         }
                     }
-
                     override fun onFailure(call: Call<Object>, t: Throwable) {
                         Log.e("좌석선점에러", "${t.localizedMessage}")
+                        choiceFailLink(stuNum.toString())
                     }
                 })
             }
@@ -1774,6 +1776,13 @@ class KioskDeskChoice: AppCompatActivity() {
         var intent = Intent(this, KioskDeskChoiceSuccess::class.java) //다음 화면 이동을 위한 intent 객체 생성
         intent.putExtra("classNo",stuNum)
         intent.putExtra("id", id)
+        startActivity(intent)
+        finish()
+    }
+
+    fun choiceFailLink(stuNum : String){
+        var intent = Intent(this, KioskDeskChoiceFail::class.java) //다음 화면 이동을 위한 intent 객체 생성
+        intent.putExtra("classNo",stuNum)
         startActivity(intent)
         finish()
     }
