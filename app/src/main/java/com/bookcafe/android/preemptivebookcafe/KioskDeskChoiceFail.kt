@@ -16,21 +16,31 @@ class KioskDeskChoiceFail : AppCompatActivity() {
 
         var intentData = intent
         var stuNum = intentData.getStringExtra("classNo")
+        var status = intentData.getStringExtra("status")
+        var seatId = intentData.getStringExtra("seatId")
         topNum.setText(stuNum.toString())
 
         topBack.setOnClickListener {
             var intent = Intent(this, KioskDeskChoice::class.java)
+            intent.putExtra("classNo",stuNum)
+            intent.putExtra("status",status)
+            intent.putExtra("seatId",seatId)
             startActivity(intent)
             finish()
         }
         topHome.setOnClickListener {
             var intent = Intent(this, KioskMenuSelect::class.java)
+            intent.putExtra("classNo",stuNum)
+            intent.putExtra("status",status)
+            intent.putExtra("seatId",seatId)
             startActivity(intent)
             finish()
         }
         choiceViewBtn.setOnClickListener {
             var intent = Intent(this, KioskDeskChoice::class.java) //다음 화면 이동을 위한 intent 객체 생성
             intent.putExtra("classNo",stuNum)
+            intent.putExtra("status",status)
+            intent.putExtra("seatId",seatId)
             startActivity(intent)
             finish()
         }

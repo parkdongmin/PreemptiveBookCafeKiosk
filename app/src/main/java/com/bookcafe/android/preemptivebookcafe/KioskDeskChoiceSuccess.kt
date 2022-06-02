@@ -458,8 +458,7 @@ class KioskDeskChoiceSuccess: AppCompatActivity() {
         })
 
         topBack.setOnClickListener {
-            var intent = Intent(this, KioskDeskChoice::class.java)
-            intent.putExtra("classNo",stuNum)
+            var intent = Intent(this, KioskMain::class.java)
             startActivity(intent)
             finish()
         }

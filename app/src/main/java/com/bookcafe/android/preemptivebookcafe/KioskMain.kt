@@ -2,25 +2,55 @@ package com.bookcafe.android.preemptivebookcafe
 
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
+import android.widget.Toast
+import androidx.annotation.RequiresApi
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.kiosk_main.*
 import kotlinx.android.synthetic.main.kiosk_main.topBack
 import kotlinx.android.synthetic.main.kiosk_menu_select.*
+import org.json.JSONArray
+import org.json.JSONObject
+import org.json.JSONTokener
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Body
+import retrofit2.http.Headers
+import retrofit2.http.POST
+import java.time.LocalDateTime
 
 class KioskMain : AppCompatActivity() {
-
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onBackPressed() {
         super.onBackPressed()
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.kiosk_main)
 
         var stuNum = ""
+
+        val gsonBuilder = GsonBuilder()
+        gsonBuilder.registerTypeAdapter(LocalDateTime::class.java, LocalDateTimeDeserializer())
+        val gson: Gson = gsonBuilder.setPrettyPrinting().create()
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://3.36.156.88:8080")
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build()
+
+        val service = retrofit.create(UserCheck::class.java)
 
         num1.setOnTouchListener { _: View, event: MotionEvent ->
             when(event.action) {
@@ -189,10 +219,32 @@ class KioskMain : AppCompatActivity() {
         }
 
         mainEntBtn.setOnClickListener {
-            var intent = Intent(this, KioskMenuSelect::class.java) //다음 화면 이동을 위한 intent 객체 생성
-            intent.putExtra("classNo",stuNum)
-            startActivity(intent)
-            finish()
+            val classNo = mainNumTextBox.text.toString()
+            if(classNo == ""){
+                Toast.makeText(applicationContext,"학번을 입력해주세요.", Toast.LENGTH_SHORT).show()
+                kioskLogFailLink()
+            }else{
+                val userClassNo = UserCheckRequestDto(classNo.toLong())
+                service.userCheckRequestFun(userClassNo).enqueue( object : Callback<Seats> {
+                    override fun onResponse(call: Call<Seats>, response: Response<Seats>) {
+                        if(response.code()==400){
+                            //val jsonObject = JSONObject(response.errorBody().toString());
+                            Log.d("에러 ", "${response.errorBody()?.string()!!}")
+                            kioskLogFailLink()
+                        }
+                        else{
+                            Log.d("로그인" , "${response.body()}")
+                            var status = response.body()?.status
+                            var seatId = response.body()?.id
+                            kioskMenuSelectLink(stuNum, status.toString(), seatId.toString())
+                        }
+                    }
+                    override fun onFailure(call: Call<Seats>, t: Throwable) {
+                        Log.e("로그인", "${t.localizedMessage}")
+                        kioskLogFailLink()
+                    }
+                })
+            }
         }
 
         topBack.setOnClickListener {
@@ -205,4 +257,26 @@ class KioskMain : AppCompatActivity() {
             finish()
         }
     }
+    fun kioskMenuSelectLink(stuNum : String, status : String, seatId : String){
+        var intent = Intent(this, KioskMenuSelect::class.java) //다음 화면 이동을 위한 intent 객체 생성
+        intent.putExtra("classNo",stuNum)
+        intent.putExtra("status",status)
+        intent.putExtra("seatId",seatId)
+        startActivity(intent)
+        finish()
+    }
+
+    fun kioskLogFailLink(){
+        var intent = Intent(this, KioskLoginFail::class.java) //다음 화면 이동을 위한 intent 객체 생성
+        startActivity(intent)
+        finish()
+    }
+}
+
+interface UserCheck{
+    @Headers("accept: application/json", "content-type: application/json")
+    @POST("/kiosk/login")
+    fun userCheckRequestFun(
+        @Body classNo : UserCheckRequestDto
+    ) : Call<Seats>
 }

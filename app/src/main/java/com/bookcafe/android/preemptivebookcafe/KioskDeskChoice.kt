@@ -34,6 +34,8 @@ class KioskDeskChoice: AppCompatActivity() {
 
         var intentData = intent
         var stuNum = intentData.getStringExtra("classNo")
+        var status = intentData.getStringExtra("status")
+        var seatId = intentData.getStringExtra("seatId")
         topNum.setText(stuNum.toString())
 
         var id = 0
@@ -1747,7 +1749,7 @@ class KioskDeskChoice: AppCompatActivity() {
                     override fun onResponse(call: Call<Object>, response: Response<Object>) {
                         if(response.code()==400){
                             Log.d("에러 ", "${response.errorBody()?.string()!!}")
-                            choiceFailLink(stuNum.toString())
+                            choiceFailLink(stuNum.toString(), status.toString(), seatId.toString())
                         }
                         else{
                             Log.d("좌석선점" , "${response.raw()}")
@@ -1757,7 +1759,7 @@ class KioskDeskChoice: AppCompatActivity() {
                     }
                     override fun onFailure(call: Call<Object>, t: Throwable) {
                         Log.e("좌석선점에러", "${t.localizedMessage}")
-                        choiceFailLink(stuNum.toString())
+                        choiceFailLink(stuNum.toString(), status.toString(), seatId.toString())
                     }
                 })
             }
@@ -1780,9 +1782,11 @@ class KioskDeskChoice: AppCompatActivity() {
         finish()
     }
 
-    fun choiceFailLink(stuNum : String){
+    fun choiceFailLink(stuNum : String, status : String, seatId : String){
         var intent = Intent(this, KioskDeskChoiceFail::class.java) //다음 화면 이동을 위한 intent 객체 생성
         intent.putExtra("classNo",stuNum)
+        intent.putExtra("status",status)
+        intent.putExtra("seatId",seatId)
         startActivity(intent)
         finish()
     }
