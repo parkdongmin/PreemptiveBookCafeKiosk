@@ -8,5 +8,6 @@ data class Seats constructor(
     val status : String,
     val leftOn : LocalDateTime,
     val registerAt : LocalDateTime,
-    val updatedAt : LocalDateTime
+    val updatedAt : LocalDateTime,
+    val reportCancel : String
 )

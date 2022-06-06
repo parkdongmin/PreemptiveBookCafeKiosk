@@ -236,7 +236,8 @@ class KioskMain : AppCompatActivity() {
                             Log.d("로그인" , "${response.body()}")
                             var status = response.body()?.status
                             var seatId = response.body()?.id
-                            kioskMenuSelectLink(stuNum, status.toString(), seatId.toString())
+                            var reportCancel = response.body()?.reportCancel
+                            kioskMenuSelectLink(stuNum, status.toString(), seatId.toString(), reportCancel.toString())
                         }
                     }
                     override fun onFailure(call: Call<Seats>, t: Throwable) {
@@ -257,11 +258,12 @@ class KioskMain : AppCompatActivity() {
             finish()
         }
     }
-    fun kioskMenuSelectLink(stuNum : String, status : String, seatId : String){
+    fun kioskMenuSelectLink(stuNum : String, status : String, seatId : String, reportCancel : String){
         var intent = Intent(this, KioskMenuSelect::class.java) //다음 화면 이동을 위한 intent 객체 생성
         intent.putExtra("classNo",stuNum)
         intent.putExtra("status",status)
         intent.putExtra("seatId",seatId)
+        intent.putExtra("reportCancel",reportCancel)
         startActivity(intent)
         finish()
     }
