@@ -66,12 +66,14 @@ class KioskDeskChange : AppCompatActivity() {
                                 else -> Log.e("error","error")
                             }
                             id = 0
+                            Log.d("id : ", "$id")
                             cnt -= 1
                             choiceDeskArray[0] = choiceDeskArray[0] + 1
                             Log.d("cnt", "$cnt")
                         }else{
                             seat1.setImageResource(R.drawable.placec4)
                             id = 1
+                            Log.d("id : ", "$id")
                             cnt += 1
                             choiceDeskArray[0] = choiceDeskArray[0] + 1
                             Log.d("cnt", "$cnt")
@@ -87,11 +89,13 @@ class KioskDeskChange : AppCompatActivity() {
                                 else -> Log.e("error","error")
                             }
                             id = 0
+                            Log.d("id : ", "$id")
                             cnt -= 1
                             choiceDeskArray[1] += 1
                         }else{
                             seat2.setImageResource(R.drawable.placec4)
                             id = 2
+                            Log.d("id : ", "$id")
                             cnt += 1
                             choiceDeskArray[1] += 1
                         }
@@ -106,11 +110,13 @@ class KioskDeskChange : AppCompatActivity() {
                                 else -> Log.e("error","error")
                             }
                             id = 0
+                            Log.d("id : ", "$id")
                             cnt -= 1
                             choiceDeskArray[2] += 1
                         }else{
                             seat3.setImageResource(R.drawable.placec4)
                             id = 3
+                            Log.d("id : ", "$id")
                             cnt += 1
                             choiceDeskArray[2] += 1
                         }

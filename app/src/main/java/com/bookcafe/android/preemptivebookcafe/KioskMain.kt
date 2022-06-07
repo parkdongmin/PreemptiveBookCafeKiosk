@@ -259,13 +259,20 @@ class KioskMain : AppCompatActivity() {
         }
     }
     fun kioskMenuSelectLink(stuNum : String, status : String, seatId : String, reportCancel : String){
-        var intent = Intent(this, KioskMenuSelect::class.java) //다음 화면 이동을 위한 intent 객체 생성
-        intent.putExtra("classNo",stuNum)
-        intent.putExtra("status",status)
-        intent.putExtra("seatId",seatId)
-        intent.putExtra("reportCancel",reportCancel)
-        startActivity(intent)
-        finish()
+        if(reportCancel == "true"){
+            Toast.makeText(applicationContext,"신고가 해제 되었습니다.", Toast.LENGTH_SHORT).show()
+            mainNumTextBox.setText("")
+
+        }else{
+            var intent = Intent(this, KioskMenuSelect::class.java) //다음 화면 이동을 위한 intent 객체 생성
+            intent.putExtra("classNo",stuNum)
+            intent.putExtra("status",status)
+            intent.putExtra("seatId",seatId)
+            intent.putExtra("reportCancel",reportCancel)
+            startActivity(intent)
+            finish()
+        }
+
     }
 
     fun kioskLogFailLink(){
