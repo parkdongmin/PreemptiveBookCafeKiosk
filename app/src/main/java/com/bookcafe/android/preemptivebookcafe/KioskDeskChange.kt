@@ -65,14 +65,12 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat1.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             Log.d("id : ", "$id")
                             cnt -= 1
                             choiceDeskArray[0] = choiceDeskArray[0] + 1
                             Log.d("cnt", "$cnt")
                         }else{
                             seat1.setImageResource(R.drawable.placec4)
-                            id = 1
                             Log.d("id : ", "$id")
                             cnt += 1
                             choiceDeskArray[0] = choiceDeskArray[0] + 1
@@ -88,13 +86,11 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat2.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             Log.d("id : ", "$id")
                             cnt -= 1
                             choiceDeskArray[1] += 1
                         }else{
                             seat2.setImageResource(R.drawable.placec4)
-                            id = 2
                             Log.d("id : ", "$id")
                             cnt += 1
                             choiceDeskArray[1] += 1
@@ -109,13 +105,11 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat3.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             Log.d("id : ", "$id")
                             cnt -= 1
                             choiceDeskArray[2] += 1
                         }else{
                             seat3.setImageResource(R.drawable.placec4)
-                            id = 3
                             Log.d("id : ", "$id")
                             cnt += 1
                             choiceDeskArray[2] += 1
@@ -130,12 +124,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat4.setImageResource(R.drawable.placev5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[3] += 1
                         }else{
                             seat4.setImageResource(R.drawable.placev4)
-                            id = 4
                             cnt += 1
                             choiceDeskArray[3] += 1
                         }
@@ -149,12 +141,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat5.setImageResource(R.drawable.placev5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[4] += 1
                         }else{
                             seat5.setImageResource(R.drawable.placev4)
-                            id = 5
                             cnt += 1
                             choiceDeskArray[4] += 1
                         }
@@ -168,12 +158,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat6.setImageResource(R.drawable.placev5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[5] += 1
                         }else{
                             seat6.setImageResource(R.drawable.placev4)
-                            id = 6
                             cnt += 1
                             choiceDeskArray[5] += 1
                         }
@@ -187,12 +175,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat7.setImageResource(R.drawable.placev5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[6] += 1
                         }else{
                             seat7.setImageResource(R.drawable.placev4)
-                            id = 7
                             cnt += 1
                             choiceDeskArray[6] += 1
                         }
@@ -206,12 +192,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat8.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[7] += 1
                         }else{
                             seat8.setImageResource(R.drawable.placeh4)
-                            id = 8
                             cnt += 1
                             choiceDeskArray[7] += 1
                         }
@@ -225,12 +209,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat9.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[8] += 1
                         }else{
                             seat9.setImageResource(R.drawable.placeh4)
-                            id = 9
                             cnt += 1
                             choiceDeskArray[8] += 1
                         }
@@ -244,12 +226,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat10.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[9] += 1
                         }else{
                             seat10.setImageResource(R.drawable.placeh4)
-                            id = 10
                             cnt += 1
                             choiceDeskArray[9] += 1
                         }
@@ -263,12 +243,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat11.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[10] += 1
                         }else{
                             seat11.setImageResource(R.drawable.placeh4)
-                            id = 11
                             cnt += 1
                             choiceDeskArray[10] += 1
                         }
@@ -282,12 +260,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat12.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[11] += 1
                         }else{
                             seat12.setImageResource(R.drawable.placec4)
-                            id = 12
                             cnt += 1
                             choiceDeskArray[11] += 1
                         }
@@ -301,12 +277,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat13.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[12] += 1
                         }else{
                             seat13.setImageResource(R.drawable.place4)
-                            id = 13
                             cnt += 1
                             choiceDeskArray[12] += 1
                         }
@@ -320,12 +294,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat14.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[13] += 1
                         }else{
                             seat14.setImageResource(R.drawable.place4)
-                            id = 14
                             cnt += 1
                             choiceDeskArray[13] += 1
                         }
@@ -339,12 +311,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat15.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[14] += 1
                         }else{
                             seat15.setImageResource(R.drawable.place4)
-                            id = 15
                             cnt += 1
                             choiceDeskArray[14] += 1
                         }
@@ -358,12 +328,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat16.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[15] += 1
                         }else{
                             seat16.setImageResource(R.drawable.place4)
-                            id = 16
                             cnt += 1
                             choiceDeskArray[15] += 1
                         }
@@ -377,12 +345,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat17.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[16] += 1
                         }else{
                             seat17.setImageResource(R.drawable.place4)
-                            id = 17
                             cnt += 1
                             choiceDeskArray[16] += 1
                         }
@@ -396,12 +362,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat18.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[17] += 1
                         }else{
                             seat18.setImageResource(R.drawable.place4)
-                            id = 18
                             cnt += 1
                             choiceDeskArray[17] += 1
                         }
@@ -415,12 +379,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat19.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[18] += 1
                         }else{
                             seat19.setImageResource(R.drawable.place4)
-                            id = 19
                             cnt += 1
                             choiceDeskArray[18] += 1
                         }
@@ -434,12 +396,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat20.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[19] += 1
                         }else{
                             seat20.setImageResource(R.drawable.place4)
-                            id = 20
                             cnt += 1
                             choiceDeskArray[19] += 1
                         }
@@ -453,12 +413,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat21.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[20] += 1
                         }else{
                             seat21.setImageResource(R.drawable.place4)
-                            id = 21
                             cnt += 1
                             choiceDeskArray[20] += 1
                         }
@@ -472,12 +430,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat22.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[21] += 1
                         }else{
                             seat22.setImageResource(R.drawable.place4)
-                            id = 22
                             cnt += 1
                             choiceDeskArray[21] += 1
                         }
@@ -491,12 +447,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat23.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[22] += 1
                         }else{
                             seat23.setImageResource(R.drawable.place4)
-                            id = 23
                             cnt += 1
                             choiceDeskArray[22] += 1
                         }
@@ -510,12 +464,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat24.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[23] += 1
                         }else{
                             seat24.setImageResource(R.drawable.place4)
-                            id = 24
                             cnt += 1
                             choiceDeskArray[23] += 1
                         }
@@ -529,12 +481,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat25.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[24] += 1
                         }else{
                             seat25.setImageResource(R.drawable.place4)
-                            id = 25
                             cnt += 1
                             choiceDeskArray[24] += 1
                         }
@@ -548,12 +498,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat26.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[25] += 1
                         }else{
                             seat26.setImageResource(R.drawable.placec4)
-                            id = 26
                             cnt += 1
                             choiceDeskArray[25] += 1
                         }
@@ -567,12 +515,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat27.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[26] += 1
                         }else{
                             seat27.setImageResource(R.drawable.placeh4)
-                            id = 27
                             cnt += 1
                             choiceDeskArray[26] += 1
                         }
@@ -586,12 +532,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat28.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[27] += 1
                         }else{
                             seat28.setImageResource(R.drawable.placeh4)
-                            id = 28
                             cnt += 1
                             choiceDeskArray[27] += 1
                         }
@@ -605,12 +549,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat29.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[28] += 1
                         }else{
                             seat29.setImageResource(R.drawable.placeh4)
-                            id = 29
                             cnt += 1
                             choiceDeskArray[28] += 1
                         }
@@ -624,12 +566,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat30.setImageResource(R.drawable.placeh5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[29] += 1
                         }else{
                             seat30.setImageResource(R.drawable.placeh4)
-                            id = 30
                             cnt += 1
                             choiceDeskArray[29] += 1
                         }
@@ -643,12 +583,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat31.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[30] += 1
                         }else{
                             seat31.setImageResource(R.drawable.place4)
-                            id = 31
                             cnt += 1
                             choiceDeskArray[30] += 1
                         }
@@ -662,12 +600,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat32.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[31] += 1
                         }else{
                             seat32.setImageResource(R.drawable.place4)
-                            id = 32
                             cnt += 1
                             choiceDeskArray[31] += 1
                         }
@@ -681,12 +617,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat33.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[32] += 1
                         }else{
                             seat33.setImageResource(R.drawable.place4)
-                            id = 33
                             cnt += 1
                             choiceDeskArray[32] += 1
                         }
@@ -700,12 +634,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat34.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[33] += 1
                         }else{
                             seat34.setImageResource(R.drawable.place4)
-                            id = 34
                             cnt += 1
                             choiceDeskArray[33] += 1
                         }
@@ -719,12 +651,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat35.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[34] += 1
                         }else{
                             seat35.setImageResource(R.drawable.place4)
-                            id = 35
                             cnt += 1
                             choiceDeskArray[34] += 1
                         }
@@ -738,12 +668,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat36.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[35] += 1
                         }else{
                             seat36.setImageResource(R.drawable.place4)
-                            id = 36
                             cnt += 1
                             choiceDeskArray[35] += 1
                         }
@@ -757,12 +685,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat37.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[36] += 1
                         }else{
                             seat37.setImageResource(R.drawable.place4)
-                            id = 37
                             cnt += 1
                             choiceDeskArray[36] += 1
                         }
@@ -776,12 +702,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat38.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[37] += 1
                         }else{
                             seat38.setImageResource(R.drawable.place4)
-                            id = 38
                             cnt += 1
                             choiceDeskArray[37] += 1
                         }
@@ -795,12 +719,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat39.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[38] += 1
                         }else{
                             seat39.setImageResource(R.drawable.place4)
-                            id = 39
                             cnt += 1
                             choiceDeskArray[38] += 1
                         }
@@ -814,12 +736,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat40.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[39] += 1
                         }else{
                             seat40.setImageResource(R.drawable.place4)
-                            id = 40
                             cnt += 1
                             choiceDeskArray[39] += 1
                         }
@@ -833,12 +753,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat41.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[40] += 1
                         }else{
                             seat41.setImageResource(R.drawable.place4)
-                            id = 41
                             cnt += 1
                             choiceDeskArray[40] += 1
                         }
@@ -852,12 +770,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat42.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[41] += 1
                         }else{
                             seat42.setImageResource(R.drawable.place4)
-                            id = 42
                             cnt += 1
                             choiceDeskArray[41] += 1
                         }
@@ -871,12 +787,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat43.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[42] += 1
                         }else{
                             seat43.setImageResource(R.drawable.place4)
-                            id = 43
                             cnt += 1
                             choiceDeskArray[42] += 1
                         }
@@ -890,12 +804,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat44.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[43] += 1
                         }else{
                             seat44.setImageResource(R.drawable.place4)
-                            id = 44
                             cnt += 1
                             choiceDeskArray[43] += 1
                         }
@@ -909,12 +821,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat45.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[44] += 1
                         }else{
                             seat45.setImageResource(R.drawable.place4)
-                            id = 45
                             cnt += 1
                             choiceDeskArray[44] += 1
                         }
@@ -928,12 +838,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat46.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[45] += 1
                         }else{
                             seat46.setImageResource(R.drawable.place4)
-                            id = 46
                             cnt += 1
                             choiceDeskArray[45] += 1
                         }
@@ -947,12 +855,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat47.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[46] += 1
                         }else{
                             seat47.setImageResource(R.drawable.place4)
-                            id = 47
                             cnt += 1
                             choiceDeskArray[46] += 1
                         }
@@ -966,12 +872,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat48.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[47] += 1
                         }else{
                             seat48.setImageResource(R.drawable.place4)
-                            id = 48
                             cnt += 1
                             choiceDeskArray[47] += 1
                         }
@@ -985,12 +889,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat49.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[48] += 1
                         }else{
                             seat49.setImageResource(R.drawable.place4)
-                            id = 49
                             cnt += 1
                             choiceDeskArray[48] += 1
                         }
@@ -1004,12 +906,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat50.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[49] += 1
                         }else{
                             seat50.setImageResource(R.drawable.place4)
-                            id = 50
                             cnt += 1
                             choiceDeskArray[49] += 1
                         }
@@ -1023,12 +923,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat51.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[50] += 1
                         }else{
                             seat51.setImageResource(R.drawable.place4)
-                            id = 51
                             cnt += 1
                             choiceDeskArray[50] += 1
                         }
@@ -1042,12 +940,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat52.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[51] += 1
                         }else{
                             seat52.setImageResource(R.drawable.place4)
-                            id = 52
                             cnt += 1
                             choiceDeskArray[51] += 1
                         }
@@ -1061,12 +957,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat53.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[52] += 1
                         }else{
                             seat53.setImageResource(R.drawable.place4)
-                            id = 53
                             cnt += 1
                             choiceDeskArray[52] += 1
                         }
@@ -1080,12 +974,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat54.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[53] += 1
                         }else{
                             seat54.setImageResource(R.drawable.place4)
-                            id = 54
                             cnt += 1
                             choiceDeskArray[53] += 1
                         }
@@ -1099,12 +991,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat55.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[54] += 1
                         }else{
                             seat55.setImageResource(R.drawable.place4)
-                            id = 55
                             cnt += 1
                             choiceDeskArray[54] += 1
                         }
@@ -1118,12 +1008,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat56.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[55] += 1
                         }else{
                             seat56.setImageResource(R.drawable.place4)
-                            id = 56
                             cnt += 1
                             choiceDeskArray[55] += 1
                         }
@@ -1137,12 +1025,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat57.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[56] += 1
                         }else{
                             seat57.setImageResource(R.drawable.place4)
-                            id = 57
                             cnt += 1
                             choiceDeskArray[56] += 1
                         }
@@ -1156,12 +1042,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat58.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[57] += 1
                         }else{
                             seat58.setImageResource(R.drawable.placec4)
-                            id = 58
                             cnt += 1
                             choiceDeskArray[57] += 1
                         }
@@ -1175,12 +1059,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat59.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[58] += 1
                         }else{
                             seat59.setImageResource(R.drawable.placec4)
-                            id = 59
                             cnt += 1
                             choiceDeskArray[58] += 1
                         }
@@ -1194,12 +1076,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat60.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[59] += 1
                         }else{
                             seat60.setImageResource(R.drawable.placec4)
-                            id = 60
                             cnt += 1
                             choiceDeskArray[59] += 1
                         }
@@ -1213,12 +1093,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat61.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[60] += 1
                         }else{
                             seat61.setImageResource(R.drawable.placec4)
-                            id = 61
                             cnt += 1
                             choiceDeskArray[60] += 1
                         }
@@ -1232,12 +1110,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat62.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[61] += 1
                         }else{
                             seat62.setImageResource(R.drawable.placec4)
-                            id = 62
                             cnt += 1
                             choiceDeskArray[61] += 1
                         }
@@ -1251,12 +1127,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat63.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[62] += 1
                         }else{
                             seat63.setImageResource(R.drawable.placec4)
-                            id = 63
                             cnt += 1
                             choiceDeskArray[62] += 1
                         }
@@ -1270,12 +1144,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat64.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[63] += 1
                         }else{
                             seat64.setImageResource(R.drawable.place4)
-                            id = 64
                             cnt += 1
                             choiceDeskArray[63] += 1
                         }
@@ -1289,12 +1161,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat65.setImageResource(R.drawable.place5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[64] += 1
                         }else{
                             seat65.setImageResource(R.drawable.place4)
-                            id = 65
                             cnt += 1
                             choiceDeskArray[64] += 1
                         }
@@ -1308,12 +1178,10 @@ class KioskDeskChange : AppCompatActivity() {
                                 "AWAY" -> seat66.setImageResource(R.drawable.placec5)
                                 else -> Log.e("error","error")
                             }
-                            id = 0
                             cnt -= 1
                             choiceDeskArray[65] += 1
                         }else{
                             seat66.setImageResource(R.drawable.placec4)
-                            id = 66
                             cnt += 1
                             choiceDeskArray[65] += 1
                         }
@@ -1795,6 +1663,11 @@ class KioskDeskChange : AppCompatActivity() {
             }else if(seatId.toString() == id.toString()){
                 Toast.makeText(applicationContext, "변경할 좌석을 선택해주세요.", Toast.LENGTH_SHORT).show()
             }else{
+                for(i in 0..65){
+                    if(choiceDeskArray[i] % 2 == 0){
+                        id = i + 1
+                    }
+                }
                 val service = retrofit.create(ChangeChoice::class.java)
                 val user = UserObject(stuNum!!.toLong())
                 val changeValue = UserRequest(id.toLong(),user)
