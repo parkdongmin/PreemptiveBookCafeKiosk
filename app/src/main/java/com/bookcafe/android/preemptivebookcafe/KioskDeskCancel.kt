@@ -12,6 +12,77 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.kiosk_desk_cancel.*
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.dialogBtn
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat1
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat10
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat11
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat12
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat13
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat14
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat15
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat16
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat17
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat18
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat19
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat2
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat20
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat21
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat22
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat23
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat24
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat25
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat26
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat27
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat28
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat29
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat3
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat30
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat31
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat32
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat33
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat34
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat35
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat36
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat37
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat38
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat39
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat4
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat40
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat41
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat42
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat43
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat44
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat45
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat46
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat47
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat48
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat49
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat5
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat50
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat51
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat52
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat53
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat54
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat55
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat56
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat57
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat58
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat59
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat6
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat60
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat61
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat62
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat63
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat64
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat65
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat66
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat7
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat8
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.seat9
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.topBack
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.topHome
+import kotlinx.android.synthetic.main.kiosk_desk_cancel.topNum
+import kotlinx.android.synthetic.main.kiosk_desk_change.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -1712,6 +1783,75 @@ class KioskDeskCancel : AppCompatActivity() {
                         "AWAY" -> seat66.setImageResource(R.drawable.placec5)
                         else -> Log.e("error","error")
                     }
+
+                    when(intentData.getStringExtra("seatId").toString()){
+                        "1" -> seat1.setImageResource(R.drawable.placec3)
+                        "2" -> seat2.setImageResource(R.drawable.placec3)
+                        "3" -> seat3.setImageResource(R.drawable.placec3)
+                        "4" -> seat4.setImageResource(R.drawable.placev3)
+                        "5" -> seat5.setImageResource(R.drawable.placev3)
+                        "6" -> seat6.setImageResource(R.drawable.placev3)
+                        "7" -> seat7.setImageResource(R.drawable.placev3)
+                        "8" -> seat8.setImageResource(R.drawable.placeh3)
+                        "9" -> seat9.setImageResource(R.drawable.placeh3)
+                        "10" -> seat10.setImageResource(R.drawable.placeh3)
+                        "11" -> seat11.setImageResource(R.drawable.placeh3)
+                        "12" -> seat12.setImageResource(R.drawable.placec3)
+                        "13" -> seat13.setImageResource(R.drawable.place3)
+                        "14" -> seat14.setImageResource(R.drawable.place3)
+                        "15" -> seat15.setImageResource(R.drawable.place3)
+                        "16" -> seat16.setImageResource(R.drawable.place3)
+                        "17" -> seat17.setImageResource(R.drawable.place3)
+                        "18" -> seat18.setImageResource(R.drawable.place3)
+                        "19" -> seat19.setImageResource(R.drawable.place3)
+                        "20" -> seat20.setImageResource(R.drawable.place3)
+                        "21" -> seat21.setImageResource(R.drawable.place3)
+                        "22" -> seat22.setImageResource(R.drawable.place3)
+                        "23" -> seat23.setImageResource(R.drawable.place3)
+                        "24" -> seat24.setImageResource(R.drawable.place3)
+                        "25" -> seat25.setImageResource(R.drawable.place3)
+                        "26" -> seat26.setImageResource(R.drawable.placec3)
+                        "27" -> seat27.setImageResource(R.drawable.placeh3)
+                        "28" -> seat28.setImageResource(R.drawable.placeh3)
+                        "29" -> seat29.setImageResource(R.drawable.placeh3)
+                        "30" -> seat30.setImageResource(R.drawable.placeh3)
+                        "31" -> seat31.setImageResource(R.drawable.place3)
+                        "32" -> seat32.setImageResource(R.drawable.place3)
+                        "33" -> seat33.setImageResource(R.drawable.place3)
+                        "34" -> seat34.setImageResource(R.drawable.place3)
+                        "35" -> seat35.setImageResource(R.drawable.place3)
+                        "36" -> seat36.setImageResource(R.drawable.place3)
+                        "37" -> seat37.setImageResource(R.drawable.place3)
+                        "38" -> seat38.setImageResource(R.drawable.place3)
+                        "39" -> seat39.setImageResource(R.drawable.place3)
+                        "40" -> seat40.setImageResource(R.drawable.place3)
+                        "41" -> seat41.setImageResource(R.drawable.place3)
+                        "42" -> seat42.setImageResource(R.drawable.place3)
+                        "43" -> seat43.setImageResource(R.drawable.place3)
+                        "44" -> seat44.setImageResource(R.drawable.place3)
+                        "45" -> seat45.setImageResource(R.drawable.place3)
+                        "46" -> seat46.setImageResource(R.drawable.place3)
+                        "47" -> seat47.setImageResource(R.drawable.place3)
+                        "48" -> seat48.setImageResource(R.drawable.place3)
+                        "49" -> seat49.setImageResource(R.drawable.place3)
+                        "50" -> seat50.setImageResource(R.drawable.place3)
+                        "51" -> seat51.setImageResource(R.drawable.place3)
+                        "52" -> seat52.setImageResource(R.drawable.place3)
+                        "53" -> seat53.setImageResource(R.drawable.place3)
+                        "54" -> seat54.setImageResource(R.drawable.place3)
+                        "55" -> seat55.setImageResource(R.drawable.place3)
+                        "56" -> seat56.setImageResource(R.drawable.place3)
+                        "57" -> seat57.setImageResource(R.drawable.place3)
+                        "58" -> seat58.setImageResource(R.drawable.placec3)
+                        "59" -> seat59.setImageResource(R.drawable.placec3)
+                        "60" -> seat60.setImageResource(R.drawable.placec3)
+                        "61" -> seat61.setImageResource(R.drawable.placec3)
+                        "62" -> seat62.setImageResource(R.drawable.placec3)
+                        "63" -> seat63.setImageResource(R.drawable.placec3)
+                        "64" -> seat64.setImageResource(R.drawable.place3)
+                        "65" -> seat65.setImageResource(R.drawable.place3)
+                        "66" -> seat66.setImageResource(R.drawable.placec3)
+                    }
                 }
             }
             override fun onFailure(call: Call<Array<Seats>>, t: Throwable) {
@@ -1722,6 +1862,10 @@ class KioskDeskCancel : AppCompatActivity() {
 
         topBack.setOnClickListener {
             var intent = Intent(this, KioskMenuSelect::class.java)
+            intent.putExtra("classNo",stuNum)
+            intent.putExtra("id", id)
+            intent.putExtra("status", status)
+            intent.putExtra("seatId", seatId)
             startActivity(intent)
             finish()
         }
@@ -1758,7 +1902,7 @@ class KioskDeskCancel : AppCompatActivity() {
                         else{
                             Log.d("좌석취소" , "${response.raw()}")
                             Log.d("좌석취소" , "${response.body()}")
-                            cancelSuccessLink(stuNum.toString(), id.toString())
+                            cancelSuccessLink(stuNum.toString(), id.toString(),seatId.toString())
                         }
                     }
                     override fun onFailure(call: Call<Object>, t: Throwable) {
@@ -1779,10 +1923,11 @@ class KioskDeskCancel : AppCompatActivity() {
             finish()
         }
     }
-    fun cancelSuccessLink(stuNum : String, id : String){
+    fun cancelSuccessLink(stuNum : String, id : String, seatId: String){
         var intent = Intent(this, KioskDeskCancelSuccess::class.java) //다음 화면 이동을 위한 intent 객체 생성
         intent.putExtra("classNo",stuNum)
         intent.putExtra("id", id)
+        intent.putExtra("seatId", seatId)
         startActivity(intent)
         finish()
     }

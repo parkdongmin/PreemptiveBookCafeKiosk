@@ -8,7 +8,77 @@ import android.os.Looper
 import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import kotlinx.android.synthetic.main.kiosk_desk_change.*
 import kotlinx.android.synthetic.main.kiosk_desk_change_success.*
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat1
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat10
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat11
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat12
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat13
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat14
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat15
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat16
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat17
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat18
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat19
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat2
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat20
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat21
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat22
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat23
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat24
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat25
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat26
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat27
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat28
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat29
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat3
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat30
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat31
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat32
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat33
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat34
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat35
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat36
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat37
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat38
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat39
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat4
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat40
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat41
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat42
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat43
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat44
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat45
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat46
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat47
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat48
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat49
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat5
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat50
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat51
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat52
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat53
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat54
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat55
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat56
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat57
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat58
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat59
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat6
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat60
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat61
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat62
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat63
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat64
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat65
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat66
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat7
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat8
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.seat9
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.topBack
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.topHome
+import kotlinx.android.synthetic.main.kiosk_desk_change_success.topNum
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -439,6 +509,75 @@ class KioskDeskChangeSuccess : AppCompatActivity() {
                         "AWAY" -> seat66.setImageResource(R.drawable.placec5)
                         else -> Log.e("error","error")
                     }
+                    when(intentData.getStringExtra("seatId").toString()){
+                        "1" -> seat1.setImageResource(R.drawable.placec3)
+                        "2" -> seat2.setImageResource(R.drawable.placec3)
+                        "3" -> seat3.setImageResource(R.drawable.placec3)
+                        "4" -> seat4.setImageResource(R.drawable.placev3)
+                        "5" -> seat5.setImageResource(R.drawable.placev3)
+                        "6" -> seat6.setImageResource(R.drawable.placev3)
+                        "7" -> seat7.setImageResource(R.drawable.placev3)
+                        "8" -> seat8.setImageResource(R.drawable.placeh3)
+                        "9" -> seat9.setImageResource(R.drawable.placeh3)
+                        "10" -> seat10.setImageResource(R.drawable.placeh3)
+                        "11" -> seat11.setImageResource(R.drawable.placeh3)
+                        "12" -> seat12.setImageResource(R.drawable.placec3)
+                        "13" -> seat13.setImageResource(R.drawable.place3)
+                        "14" -> seat14.setImageResource(R.drawable.place3)
+                        "15" -> seat15.setImageResource(R.drawable.place3)
+                        "16" -> seat16.setImageResource(R.drawable.place3)
+                        "17" -> seat17.setImageResource(R.drawable.place3)
+                        "18" -> seat18.setImageResource(R.drawable.place3)
+                        "19" -> seat19.setImageResource(R.drawable.place3)
+                        "20" -> seat20.setImageResource(R.drawable.place3)
+                        "21" -> seat21.setImageResource(R.drawable.place3)
+                        "22" -> seat22.setImageResource(R.drawable.place3)
+                        "23" -> seat23.setImageResource(R.drawable.place3)
+                        "24" -> seat24.setImageResource(R.drawable.place3)
+                        "25" -> seat25.setImageResource(R.drawable.place3)
+                        "26" -> seat26.setImageResource(R.drawable.placec3)
+                        "27" -> seat27.setImageResource(R.drawable.placeh3)
+                        "28" -> seat28.setImageResource(R.drawable.placeh3)
+                        "29" -> seat29.setImageResource(R.drawable.placeh3)
+                        "30" -> seat30.setImageResource(R.drawable.placeh3)
+                        "31" -> seat31.setImageResource(R.drawable.place3)
+                        "32" -> seat32.setImageResource(R.drawable.place3)
+                        "33" -> seat33.setImageResource(R.drawable.place3)
+                        "34" -> seat34.setImageResource(R.drawable.place3)
+                        "35" -> seat35.setImageResource(R.drawable.place3)
+                        "36" -> seat36.setImageResource(R.drawable.place3)
+                        "37" -> seat37.setImageResource(R.drawable.place3)
+                        "38" -> seat38.setImageResource(R.drawable.place3)
+                        "39" -> seat39.setImageResource(R.drawable.place3)
+                        "40" -> seat40.setImageResource(R.drawable.place3)
+                        "41" -> seat41.setImageResource(R.drawable.place3)
+                        "42" -> seat42.setImageResource(R.drawable.place3)
+                        "43" -> seat43.setImageResource(R.drawable.place3)
+                        "44" -> seat44.setImageResource(R.drawable.place3)
+                        "45" -> seat45.setImageResource(R.drawable.place3)
+                        "46" -> seat46.setImageResource(R.drawable.place3)
+                        "47" -> seat47.setImageResource(R.drawable.place3)
+                        "48" -> seat48.setImageResource(R.drawable.place3)
+                        "49" -> seat49.setImageResource(R.drawable.place3)
+                        "50" -> seat50.setImageResource(R.drawable.place3)
+                        "51" -> seat51.setImageResource(R.drawable.place3)
+                        "52" -> seat52.setImageResource(R.drawable.place3)
+                        "53" -> seat53.setImageResource(R.drawable.place3)
+                        "54" -> seat54.setImageResource(R.drawable.place3)
+                        "55" -> seat55.setImageResource(R.drawable.place3)
+                        "56" -> seat56.setImageResource(R.drawable.place3)
+                        "57" -> seat57.setImageResource(R.drawable.place3)
+                        "58" -> seat58.setImageResource(R.drawable.placec3)
+                        "59" -> seat59.setImageResource(R.drawable.placec3)
+                        "60" -> seat60.setImageResource(R.drawable.placec3)
+                        "61" -> seat61.setImageResource(R.drawable.placec3)
+                        "62" -> seat62.setImageResource(R.drawable.placec3)
+                        "63" -> seat63.setImageResource(R.drawable.placec3)
+                        "64" -> seat64.setImageResource(R.drawable.place3)
+                        "65" -> seat65.setImageResource(R.drawable.place3)
+                        "66" -> seat66.setImageResource(R.drawable.placec3)
+                    }
+
                     HandlerMain()
                 }
             }
